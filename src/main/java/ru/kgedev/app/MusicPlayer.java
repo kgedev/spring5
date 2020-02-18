@@ -1,5 +1,7 @@
 package ru.kgedev.app;
 
+import ru.kgedev.app.api.Music;
+
 public class MusicPlayer {
     private Music music;
 
