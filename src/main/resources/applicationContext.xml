@@ -11,4 +11,9 @@
     <bean id="rockMusic" class="ru.kgedev.app.impl.RockMusic"/>
     <bean id="jazzMusic" class="ru.kgedev.app.impl.JazzMusic"/>
 
+    <bean id="musicPlayer"
+          class="ru.kgedev.app.MusicPlayer">
+        <constructor-arg ref="classicalMusic"/>
+    </bean>
+
 </beans>
