@@ -14,7 +14,8 @@
     <bean id="jazzMusic" class="ru.kgedev.app.impl.JazzMusic"/>
 
     <bean id="musicPlayer"
-          class="ru.kgedev.app.MusicPlayer">
+          class="ru.kgedev.app.MusicPlayer"
+          scope="prototype">
 <!--        <constructor-arg ref="classicalMusic"/>-->
         <property name="musicList">
             <list>
