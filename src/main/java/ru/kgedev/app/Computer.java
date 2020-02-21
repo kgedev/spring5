@@ -3,6 +3,8 @@ package ru.kgedev.app;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import static ru.kgedev.app.Genre.CLASSICAL;
+
 @Component
 public class Computer {
     private int id;
@@ -16,6 +18,6 @@ public class Computer {
 
     @Override
     public String toString() {
-        return "Computer " + id + " Playing: " + musicPlayer.playMusic(Genre.CLASSICAL);
+        return "Computer " + id + " Playing: " + musicPlayer.playMusic(CLASSICAL);
     }
 }
